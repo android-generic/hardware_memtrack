@@ -20,6 +20,7 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_CFLAGS := -Wall
 LOCAL_SHARED_LIBRARIES := liblog libcutils
 LOCAL_SRC_FILES := $(call all-subdir-c-files)
+LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_MODULE := memtrack.default
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
